@@ -12,169 +12,379 @@
     transition: all 300ms;
 }
 
-:root {
-    /* =============================font-sizes======================= */
-    --fs-xxl: 72px;
-    --fs-xl: 56px;
-    --fs-lg: 24px;
-    --fs-sm: 18px;
-    --fs-xs: 16px;
 
-    /* ==========================font-faimly============================ */
-    --ff-regular: 'Poppins';
-    --ff-fira: 'Fira Code';
-    --ff-orbitron: 'Orbitron';
-    /* ============================font-weight======================= */
-    --fw-max-pro: 900;
-    --fw-max: 800;
-    --fw-bold: 700;
-    --fw-Semi-Bold: 600;
-    --fw-Medium: 500;
-    --fw-light: 400;
+/* ---------------------------all-media--------------------------- */
 
-    /* ============================font-colors======================= */
-    --color-primary: #fff;
-    --color-secondary: #F1EC2F;
-    --color-shadow: #FFFFFF1A;
+@media (min-width:320px) and (max-width:575.98px) {}
 
-    /* ============================font-colors======================= */
+@media (min-width:576px) and (max-width:767.98px) {}
+
+@media (min-width:768px) and (max-width:991.98px) {}
+
+@media (min-width:992px) and (max-width:1023.98px) {}
+
+@media (min-width:1024px) and (max-width:1199.98px) {}
+
+@media (min-width:1200px) and (max-width:1399.98px) {
+    :root {
+        /* =============================font-sizes======================= */
+        --fs-xxl: 72px;
+        --fs-xl: 56px;
+        --fs-lg: 24px;
+        --fs-sm: 18px;
+        --fs-xs: 16px;
+
+        /* ==========================font-faimly============================ */
+        --ff-regular: 'Poppins';
+        --ff-fira: 'Fira Code';
+        --ff-orbitron: 'Orbitron';
+        /* ============================font-weight======================= */
+        --fw-max-pro: 900;
+        --fw-max: 800;
+        --fw-bold: 700;
+        --fw-Semi-Bold: 600;
+        --fw-Medium: 500;
+        --fw-light: 400;
+
+        /* ============================font-colors======================= */
+        --color-primary: #fff;
+        --color-secondary: #F1EC2F;
+        --color-shadow: #FFFFFF1A;
+
+        /* ============================font-colors======================= */
+    }
+
+    /* =========================Root-define================================ */
+    /* =========================font-size================================ */
+    .fs-xxl {
+        font-size: var(--fs-xxl);
+    }
+
+    .fs-xl {
+        font-size: var(--fs-xl);
+    }
+
+    .fs-lg {
+        font-size: var(--fs-lg);
+    }
+
+    .fs-sm {
+        font-size: var(--fs-sm);
+    }
+
+    .fs-xs {
+        font-size: var(--fs-xs);
+    }
+
+    /* =========================font-weight================================ */
+    .fw-max-pro {
+        font-weight: var(--fw-max-pro);
+    }
+
+    .fw-max {
+        font-weight: var(--fw-max);
+    }
+
+    .fw-bold {
+        font-weight: var(--fw-bold);
+    }
+
+    .fw-semi-bold {
+        font-weight: var(--fw-Semi-Bold);
+    }
+
+    .fw-medium {
+        font-weight: var(--fw-Medium);
+    }
+
+    .fw-light {
+        font-weight: var(--fw-light);
+    }
+
+    /* =========================font-family================================ */
+    .ff-regular {
+        font-family: var(--ff-regular);
+    }
+
+    .ff-orbitron {
+        font-family: var(--ff-orbitron);
+    }
+
+    .ff-fira {
+        font-family: var(--ff-fira);
+    }
+
+    /* =========================colors================================ */
+    .color-primary {
+        color: var(--color-primary);
+    }
+
+    .color-secondary {
+        color: var(--color-secondary);
+    }
+
+    /* =========================Root-define================================ */
+
+    /* -----------------------------common-clases----------------------------- */
+
+    .h-100vh {
+        min-height: 100vh;
+    }
+
+    .bg-black-sec {
+        background-color: #0F0F0E;
+    }
+
+    .card:hover {
+        outline: 2px solid #878787;
+    }
+
+    /* ---------------------------------header------css--------------------------- */
+
+    .bg-img-header {
+        background-image: url(../img/png/hero-bg-img.png);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+
+    .nav-btn {
+        background: var(--color-secondary);
+        padding: 12px 20px;
+    }
+
+    .nav-btn:hover {
+        color: var(--color-secondary);
+        background: var(--color-shadow);
+        outline: 2px solid white;
+        padding: 12px 20px;
+    }
+
+    .nav-shadow {
+        background: var(--color-shadow);
+    }
+
+    .hero-para {
+        max-width: 487px;
+    }
+
+    .hero-btn-1 {
+        color: black;
+        background: var(--color-secondary);
+        padding: 12px 20px;
+        text-decoration: none;
+    }
+
+    .hero-btn-1:hover {
+        color: var(--color-primary);
+        background: var(--color-shadow);
+        outline: 2px solid white;
+        padding: 12px 20px;
+        text-decoration: none;
+    }
+
+    /* --------------------------the cast -------------------------- */
+    .the-cast-para {
+        max-width: 717px;
+    }
+
+    .the-cast-bg-clr {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* < !-------------------------------- FOUNDER PASS------------------------------ --> */
+    .bg-img-founder {
+        background-image: url(../img/png/founder-bg-img.png);
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .founder-para {
+        max-width: 719px;
+    }
 }
 
-/* =========================Root-define================================ */
-/* =========================font-size================================ */
-.fs-xxl {
-    font-size: var(--fs-xxl);
-}
+@media (min-width:1400px) and (max-width:2000px) {
+    :root {
+        /* =============================font-sizes======================= */
+        --fs-xxl: 72px;
+        --fs-xl: 56px;
+        --fs-lg: 24px;
+        --fs-sm: 18px;
+        --fs-xs: 16px;
 
-.fs-xl {
-    font-size: var(--fs-xl);
-}
+        /* ==========================font-faimly============================ */
+        --ff-regular: 'Poppins';
+        --ff-fira: 'Fira Code';
+        --ff-orbitron: 'Orbitron';
+        /* ============================font-weight======================= */
+        --fw-max-pro: 900;
+        --fw-max: 800;
+        --fw-bold: 700;
+        --fw-Semi-Bold: 600;
+        --fw-Medium: 500;
+        --fw-light: 400;
 
-.fs-lg {
-    font-size: var(--fs-lg);
-}
+        /* ============================font-colors======================= */
+        --color-primary: #fff;
+        --color-secondary: #F1EC2F;
+        --color-shadow: #FFFFFF1A;
 
-.fs-sm {
-    font-size: var(--fs-sm);
-}
+        /* ============================font-colors======================= */
+    }
 
-.fs-xs {
-    font-size: var(--fs-xs);
-}
+    /* =========================Root-define================================ */
+    /* =========================font-size================================ */
+    .fs-xxl {
+        font-size: var(--fs-xxl);
+    }
 
-/* =========================font-weight================================ */
-.fw-max-pro {
-    font-weight: var(--fw-max-pro);
-}
+    .fs-xl {
+        font-size: var(--fs-xl);
+    }
 
-.fw-max {
-    font-weight: var(--fw-max);
-}
+    .fs-lg {
+        font-size: var(--fs-lg);
+    }
 
-.fw-bold {
-    font-weight: var(--fw-bold);
-}
+    .fs-sm {
+        font-size: var(--fs-sm);
+    }
 
-.fw-semi-bold {
-    font-weight: var(--fw-Semi-Bold);
-}
+    .fs-xs {
+        font-size: var(--fs-xs);
+    }
 
-.fw-medium {
-    font-weight: var(--fw-Medium);
-}
+    /* =========================font-weight================================ */
+    .fw-max-pro {
+        font-weight: var(--fw-max-pro);
+    }
 
-.fw-light {
-    font-weight: var(--fw-light);
-}
+    .fw-max {
+        font-weight: var(--fw-max);
+    }
 
-/* =========================font-family================================ */
-.ff-regular {
-    font-family: var(--ff-regular);
-}
+    .fw-bold {
+        font-weight: var(--fw-bold);
+    }
 
-.ff-orbitron {
-    font-family: var(--ff-orbitron);
-}
+    .fw-semi-bold {
+        font-weight: var(--fw-Semi-Bold);
+    }
 
-.ff-fira {
-    font-family: var(--ff-fira);
-}
+    .fw-medium {
+        font-weight: var(--fw-Medium);
+    }
 
-/* =========================colors================================ */
-.color-primary {
-    color: var(--color-primary);
-}
+    .fw-light {
+        font-weight: var(--fw-light);
+    }
 
-.color-secondary {
-    color: var(--color-secondary);
-}
+    /* =========================font-family================================ */
+    .ff-regular {
+        font-family: var(--ff-regular);
+    }
 
-/* =========================Root-define================================ */
+    .ff-orbitron {
+        font-family: var(--ff-orbitron);
+    }
 
-/* -----------------------------common-clases----------------------------- */
+    .ff-fira {
+        font-family: var(--ff-fira);
+    }
 
-.h-100vh {
-    min-height: 100vh;
-}
+    /* =========================colors================================ */
+    .color-primary {
+        color: var(--color-primary);
+    }
 
-/* ---------------------------------header------css--------------------------- */
+    .color-secondary {
+        color: var(--color-secondary);
+    }
 
-.bg-img-header {
-    background-image: url(../img/png/hero-img.png);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-}
+    /* =========================Root-define================================ */
 
-.nav-btn {
-    background: var(--color-secondary);
-    padding: 12px 20px;
-}
+    /* -----------------------------common-clases----------------------------- */
 
-.nav-btn:hover {
-    color: var(--color-secondary);
-    background: var(--color-shadow);
-    outline: 2px solid white;
-    padding: 12px 20px;
-}
+    .h-100vh {
+        min-height: 100vh;
+    }
 
-.nav-shadow {
-    background: var(--color-shadow);
-}
+    .bg-black-sec {
+        background-color: #0F0F0E;
+    }
 
-.hero-para {
-    max-width: 487px;
-}
+    .card:hover {
+        outline: 2px solid #878787;
+    }
 
-.hero-btn-1 {
-    color: black;
-    background: var(--color-secondary);
-    padding: 12px 20px;
-    text-decoration: none;
-}
+    /* ---------------------------------header------css--------------------------- */
 
-.hero-btn-1:hover {
-    color: var(--color-primary);
-    background: var(--color-shadow);
-    outline: 2px solid white;
-    padding: 12px 20px;
-    text-decoration: none;
-}
+    .bg-img-header {
+        background-image: url(../img/png/hero-bg-img.png);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
 
-/* --------------------------the cast -------------------------- */
-.the-cast-para {
-    max-width: 666px;
-}
+    .nav-btn {
+        background: var(--color-secondary);
+        padding: 12px 20px;
+    }
 
-.the-cast-bg-clr {
-    background: rgba(255, 255, 255, 0.1);
-}
+    .nav-btn:hover {
+        color: var(--color-secondary);
+        background: var(--color-shadow);
+        outline: 2px solid white;
+        padding: 12px 20px;
+    }
 
-/* < !-------------------------------- FOUNDER PASS------------------------------ --> */
-.bg-img-founder {
-    background-image: url(../img/png/founder-bg-img.png);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .nav-shadow {
+        background: var(--color-shadow);
+    }
+
+    .hero-para {
+        max-width: 487px;
+    }
+
+    .hero-btn-1 {
+        color: black;
+        background: var(--color-secondary);
+        padding: 12px 20px;
+        text-decoration: none;
+    }
+
+    .hero-btn-1:hover {
+        color: var(--color-primary);
+        background: var(--color-shadow);
+        outline: 2px solid white;
+        padding: 12px 20px;
+        text-decoration: none;
+    }
+
+    /* --------------------------the cast -------------------------- */
+    .the-cast-para {
+        max-width: 717px;
+    }
+
+    .the-cast-bg-clr {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* < !-------------------------------- FOUNDER PASS------------------------------ --> */
+    .bg-img-founder {
+        background-image: url(../img/png/founder-bg-img.png);
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .founder-para {
+        max-width: 719px;
+    }
+
+
 }
